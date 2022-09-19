@@ -3,7 +3,7 @@ import { Text,Image, View, StyleSheet } from "react-native";
 export default function CSpecs(props){
     return(
         <View style = {styles.conteiner}>
-        <Image source={{ uri: "https://img.icons8.com/ios-glyphs/30/FFFFFF/exclamation-mark.png" }} style={styles.icone} />
+        <Image source={{ uri: props.icone }} style={styles.icone} />
         <Text style = {styles.titulo}>{props.titulo}{'\n'}
         
         <Text style = {styles.info}>{props.info}</Text>

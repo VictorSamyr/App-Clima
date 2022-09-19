@@ -5,7 +5,7 @@ import ClimaDaSemana from './src/Telas/ClimaDaSemana';
 export default function App() {
   return (
     <View style={styles.container}>
-    <ClimaDaSemana></ClimaDaSemana>
+    <ClimaDeHoje />
     </View>
   );
 }

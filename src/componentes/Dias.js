@@ -3,15 +3,16 @@ import { View,Image,Text,StyleSheet } from "react-native";
 export default function Dias(props){
     return(
         <View style={styles.container}>
-            <Image source={{ uri: "https://img.icons8.com/color/144/000000/sun--v1.png" }} style={styles.icone} />
+            <Image source={{ uri: props.icone }} style={styles.icone} />
             <Text style={styles.dia}>{props.dia}<Text style={styles.data}>{props.data}</Text></Text>
-            
-            
+
+    
             <Text style={styles.max}>{props.max}
                 <Text style={styles.min}>
                 {props.min}
                 </Text>
             </Text>
+            
         </View>
     );
 }
@@ -26,8 +27,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between'
     },
     icone:{
-        width: '20%', 
-        height: 60,
+        width: '10%', 
+        height: '50%',
         marginRight: 20
     },
     dia:{
@@ -50,5 +51,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: '#dfdfdf',
         fontWeight: 'bold'
-    }
+    },
+    
+
   });

@@ -1,14 +1,18 @@
 import { View,Text,StyleSheet,Image } from "react-native";
 
 export default function HClima(props){
+
     return(
         <View style ={styles.conteiner}>
+            
             <Text style ={styles.horario}>{props.horario}</Text>
-            <Image source={{ uri: "https://img.icons8.com/color/30/000000/sun--v1.png" }} style={styles.icone}/>
+            <Image source={{ uri: props.icone }} style={styles.icone}/>
             <Text style ={styles.temp}>{props.temp}</Text>
+            
         </View>
     );
 }
+
 
 const styles = StyleSheet.create({
     conteiner:{

@@ -10,10 +10,10 @@ export default function ClimaDeHoje(){
     return (
         <View style ={styles.conteiner}>
         <Região></Região>
-        <CDHInfo></CDHInfo>
+        <CDHInfo icone = "https://cdn-icons-png.flaticon.com/512/1163/1163662.png"></CDHInfo>
         <SRow1></SRow1>
         <SRow2></SRow2>
-        <Text style ={styles.title}>Today</Text>
+        <Text style ={styles.title}>Hoje</Text>
         <Horarios></Horarios>
         </View>
     );
